@@ -1,0 +1,21 @@
+!.rbenv-version
+
+*.class
+*.dat
+.cache
+.classpath
+/.env
+coverage
+
+/tmp/
+
+/.bundle/
+/bundler-bin/
+/config/custom/
+/public/
+
+# This intentionally omits the trailing slash so that both directories and
+# symlinks are ignored
+/log
+
+/.vagrant

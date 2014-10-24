@@ -1,0 +1,17 @@
+#!/bin/bash
+if [ -n "$BASH_VERSION" ]; then
+  if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+  fi
+fi
+
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
+
+export PATH=$HOME/.rbenv/bin:$PATH:/opt/oracle/instantclient
+export LD_LIBRARY_PATH=/usr/local/lib
+
+if ls ~/.rbenv ; then
+  eval "$(rbenv init -)"
+fi

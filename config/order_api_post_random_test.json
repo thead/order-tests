@@ -1,0 +1,55 @@
+[
+  {
+  "test_case": "Create order with multiple random items, vintage removed as unreliable for testing",
+  "is_gift":false,
+  "account":{"new-user": {}},
+  "billing_address":{
+    "firstname":"Joe",
+    "lastname":"Blo",
+    "street_1":"365 Gross St.",
+    "street_2":"Apt 6",
+    "city":"Pittsburgh",
+    "region":"PA",
+    "country":"USA",
+    "postal_code":"15224-1234"
+  },
+  "shipping_address":{
+    "firstname":"Joe",
+    "lastname":"Blo",
+    "street_1":"365 Gross St.",
+    "street_2":"Apt 6",
+    "city":"Pittsburgh",
+    "region":"PA",
+    "country":"USA",
+    "postal_code":"15224-1234"
+  },
+  "shipping_method_code":"XFS",
+  "items":[
+    {
+    "find-item": {},
+    "quantity":1
+  },
+  {
+    "find-item": {"tax":true},
+    "quantity":1
+  },
+  {
+    "find-item": {"tax":false},
+    "quantity":1
+  },
+  {
+    "find-item": {"under":50},
+    "quantity":1
+  },
+  {
+    "find-item": {"over":90},
+    "quantity":1
+  },
+  {
+    "find-item": {"tax":true, "under": 50},
+    "quantity":1
+  }
+  ],
+  "credit_card":{"number":4111111111111111,"expiration_date":"11/16"}
+}
+]

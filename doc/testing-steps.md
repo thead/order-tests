@@ -1,0 +1,68 @@
+Available testing steps
+-----------------------
+
+The following testing steps are available for use by qa_order_test.rb:
+
+ - BookRudi                : Books explicit orders via rudi
+ - BookRudiQuery           : Books all waiting orders via rudi
+ - CancelRudi              : Cancels explicit orders via rudi
+ - CancelRudiQuery         : Cancels all waiting orders via rudi
+ - ClearHourDelay          : Clears the hour delay on booking new orders
+ - CompareManual           : Prompts for manual compares of Ecomm/Oracle
+ - CompareBooked           : Compares Ecomm/Oracle data for booked orders
+ - CompareHJOrder          : Compares Oracle/HJ data for order master/detail
+ - CompareCaptured         : Compares Ecomm/Oracle data for fund captured orders
+ - CompareGC               : Compares Ecomm/Oracle data for gift certificates
+ - CompareInvoiced         : Compares Ecomm/Oracle data for invoiced orders
+ - CompareCanceled         : Compares Ecomm/Oracle data for canceled orders
+ - CreateAuto              : Creates a new order via ecomm order api
+ - CreateManual            : Prompts for order ids
+ - Exit                    : Stop test early 
+ - FakeHJ                  : Fakes HJ wave/pick/sort/ship operations
+ - FakeHJCancel            : Fakes HJ operations canceling all items
+ - FakeHJCancelOne         : Fakes HJ operations canceling first item
+ - FakeHJFraud             : Fakes HJ operations marking orders for fraud
+ - FakeHJScratch           : Fakes HJ operations scratching 1 from all items
+ - FakeHJScratchOne        : Fakes HJ operations scratching 1 from first item
+ - FindNewOrder            : Finds most recently added new order(s) in system ready for booking
+ - FindNewGC               : Finds most recently added new gift certificate order(s) in system
+ - FindUnshippedOrder      : Finds day+ old unshipped order(s)
+ - FindAgileShippedOrder   : Finds most recently agile shipped order(s)
+ - FindFraudCanceledOrder  : Finds most recently fraud canceled order(s)
+ - InvoiceRudi             : Invoices explicit orders via rudi
+ - InvoiceRudiQuery        : Invoices all waiting orders via rudi
+ - InvokeOracleSO          : Invokes oracle concurrent sales order programs
+ - InvokeOracleSOFake      : Invokes oracle concurrent sales fake order programs
+ - ReshipUniblab           : Ships already shipped orders via uniblab
+ - ShipUniblab             : Ships explicit orders via uniblab
+ - ShipUniblabQuery        : Ships all waiting orders via uniblab
+ - Skip                    : Do nothing
+ - VerifyEcommManual       : Prompts for manual Ecomm data checks
+ - VerifyEcommNew          : Checks Ecomm data for new orders
+ - VerifyEcommBooked       : Checks Ecomm data for booked orders
+ - VerifyEcommCaptured     : Checks Ecomm data for fund captured orders
+ - VerifyEcommGC           : Checks Ecomm data for gift certificates
+ - VerifyEcommInvoiced     : Checks Ecomm data for invoiced orders
+ - VerifyEcommCanceled     : Checks Ecomm data for canceled orders
+ - VerifyOracleManual      : Prompts for manual Oracle data checkes
+ - VerifyOracleNew         : Checks Oracle data for new orders
+ - VerifyOracleBooked      : Checks Oracle data for booked orders
+ - VerifyOracleAgileShip   : Checks Oracle data for Agile shipped orders
+ - VerifyOracleUniblabShip : Checks Oracle data for uniblab shipped orders
+ - VerifyOracleGC          : Checks Oracle data for gift certificates
+ - VerifyOracleInvoiced    : Checks Oracle data for invoiced orders
+ - VerifyOracleCanceled    : Checks Oracle data for canceled orders
+ - WaitBookedPoll          : Wait until explicit orders are all booked
+ - WaitBookedProdPoll      : Wait several hours until explict orders are all booked
+ - WaitCanceledPoll        : Wait for rudi cancel operation to complete
+ - WaitHJBookedPoll        : Wait until explicit orders are all HJ booked
+ - WaitHJDownloadedPoll    : Wait until explicit orders are all downloaded to HJ
+ - WaitHJShippedPoll       : Wait until explicit orders are all HJ shipped
+ - WaitHJShippedProdPoll   : Wait several days until explicit orders are all HJ shipped
+ - WaitShippedPoll         : Wait until explicit orders are all shipped
+ - WaitUniblabProcessedPoll: Wait for uniblab operations to complete
+ - WaitCapturedPoll        : Wait until explicit orders are all funds captured
+ - WaitInvoicedPoll        : Wait until explicit orders are all invoiced
+ - WaitHour                : Wait an hour
+ - WaitManual              : Wait until prompted input givena
+
